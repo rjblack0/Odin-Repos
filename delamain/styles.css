@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'play';
+    src: local('play\Play-Regular.ttf')format('play-regular'),
+        local('play\Play-bold.ttf') format("play-bold");
+}
+
+* {
+    color:rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif
+}
+
+.menu-container {
+    display: flex;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px
+}
+
+.menu-container button {
+    border-color: rgb(0, 0, 0);
+    border-style:hidden;
+    border-radius: 6%;
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    display: flex;
+    font-weight: bold;
+    margin: 10px;
+    font-size: large;
+}
+
+.menu-container button:hover {
+    box-shadow: 3px 3px 30px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-delay 1s: 
+}
+
+.content-container {
+    display: flex;
+    margin-left: 130px;
+    width: 600px;
+    justify-content: flex-start;
+    *align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.content-container h2 {
+    font-size: 19px;
+}
+
+.content-container p {
+    font-size: 16px;
+}
+
+.content-container ul li {
+    font-size: 16px;
+    position: relative;
+    left: -23px;
+    padding-left: 35px;
+}
+
+
+

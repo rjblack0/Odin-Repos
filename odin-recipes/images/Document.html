@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head><body><styles>
+    <link rel="stylesheet" href="./Document_files/styles.css"> 
+</styles>
+
+
+
+    <h1>CSS Style Sheet</h1>
+        <h2>Buttons Styles</h2>
+    <button> Unedited </button>
+        <h3> Standard Edits</h3>
+    <button class="standard-1">Color Change</button>
+    <h2></h2>
+    <button class="standard-2">Border Change</button>
+        <h2></h2>
+    <div class="box-method">Box Method</div>
+
+    <h1>Basic document flow</h1>
+
+<p>I am a basic block level element. My adjacent block level elements sit on new lines below me.</p>
+
+<p>By default we span 100% of the width of our parent element, and we are as tall as our child content. Our total width and height is our content + padding + border width/height.</p>
+
+<p>We are separated by our margins. Because of margin collapsing, we are separated by the width of one of our margins, not both.</p>
+
+<p>Inline elements 
+    <span>like this one</span> 
+    and 
+    <span>this one</span> 
+    sit on the same line along with adjacent text nodes, if there is space on the same line. Overflowing inline elements will 
+    <span>wrap onto a new line if possible (like this one containing text)</span>
+    , or just go on to a new line if not, much like this image will do: 
+    <img src="./Document_files/long.jpg" alt="snippet of cloth"></p>
+
+    <p>This line displays an
+        <span style="color:blue;font-weight:bold;">inline</span>
+         edit and this one displays an
+         <span style="color:darkolivegreen;font-weight:bold;" class="span-block">inline-block</span>
+          edit.
+        </p>
+
+    <div style="background-color:black;color:white;padding:20px;">
+        <h2>The headline matches the full background color</h2>
+        <p>But P gets its own box and color scheme.</p>
+      </div>
+    <div class="flex-container">
+        <h2>Flex Box Practice </h2>
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+    <div class="contrainer" style="background-color:rgb(235, 227, 213);color:black;padding;20px;">
+        <h2>Flexbox Coding</h2>
+            <div class="alpha">Alpha</div>
+            <div class="beta">Beta</div>
+            <div class="delta">Delta</div>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
