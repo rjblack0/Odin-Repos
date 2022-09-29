@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Practice - Listing/title>
+    <title>Javascript Practice - Listing</title>
 </head>
 <body>
     <button>Press Me</button>
-    <Div>Get Groceries</Div>
-    <Div>Wash Car</Div>
-    <Div>Make Dinner</Div>
 <script>
     let todo1 = "Item 1";
     let todo2 = "Item 2";
     let todo3 = "Item 3";
+
+    let element = document.createElement('div');
+    element.innerText = todo1;
+    document.body.appendChild(element);
+
+    element = document.createElement('div');
+    element.innerText = todo2;
+    document.body.appendChild(element);
+
+    element = document.createElement('div');
+    element.innerText = todo3;
+    document.body.appendChild(element);
 </script>
 </body>
 </html>
